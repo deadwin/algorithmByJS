@@ -12,7 +12,7 @@ exports.numIslands = function (grid) {
             if (grid[i][j] === '1') {
                 result++;
                 var queue = [];
-                var posIndex = { x: i, y: j };
+                let posIndex = { x: i, y: j };
                 queue.push(posIndex);
                 while (queue.length > 0) {
                     var curArr = queue[0];
