@@ -1,3 +1,9 @@
 // import { numSquares } from "../problems/numSquares";
 
+import { isValid } from "../historyProblems/isValid";
+
+// import { MinStack } from "../problems/MinStack";
+
 // console.log(numSquares(12))
+// let minStack = new MinStack();
+// console.log(isValid("{}()[]{[]}"))
