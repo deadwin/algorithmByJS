@@ -1,6 +1,5 @@
-"use strict";
 //739. 每日温度
-Object.defineProperty(exports, "__esModule", { value: true });
+
 //解法1，使用遍历
 /**
  * @param {number[]} T
@@ -25,26 +24,26 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     }
 //     return arr;
 // };
+
+
 //解法2，使用栈
-exports.dailyTemperatures = function (T) {
-    if (T.length == 0)
-        return [];
-    let arr = [];
-    for (let i = 0; i < T.length; i++) {
+export var dailyTemperatures = function (T:number[]):number[] {
+    if(T.length == 0)   return [];
+    let arr:number[] = [];
+    for(let i = 0;i < T.length;i ++){
         arr[i] = 0;
     }
     let stack = [];
     stack.push(0);
     for (let i = 1; i < T.length; i++) {
         let temp = T[i];
-        while (stack.length > 0) {
+        while(stack.length > 0){
             let topIndex = stack[stack.length - 1];
             let top = T[topIndex];
-            if (top < temp) {
+            if(top < temp){
                 arr[topIndex] = i - topIndex;
                 stack.pop();
-            }
-            else {
+            }else{
                 break;
             }
         }
