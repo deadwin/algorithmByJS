@@ -1,6 +1,6 @@
 // import { numSquares } from "../problems/numSquares";
 
-import { numIslandsDFS } from "../historyProblems/numIslands";
+import { findTargetSumWays } from "../problems/findTargetSumWays";
 
 // import { evalRPN } from "../historyProblems/evalRPN";
 
@@ -12,4 +12,6 @@ import { numIslandsDFS } from "../historyProblems/numIslands";
 // console.log(isValid("{}()[]{[]}"))
 
 // evalRPN(["4","13","5","/","+"])
-numIslandsDFS([["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]])
+
+
+findTargetSumWays([1,1,1,1,1],3)
