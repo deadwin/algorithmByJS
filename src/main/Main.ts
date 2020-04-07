@@ -1,6 +1,7 @@
 // import { numSquares } from "../problems/numSquares";
 
 import { findTargetSumWays } from "../problems/findTargetSumWays";
+import { GraphNode, cloneGraph } from "../problems/cloneGraph";
 
 // import { evalRPN } from "../historyProblems/evalRPN";
 
@@ -12,6 +13,28 @@ import { findTargetSumWays } from "../problems/findTargetSumWays";
 // console.log(isValid("{}()[]{[]}"))
 
 // evalRPN(["4","13","5","/","+"])
+let createGraphNode = function(value):GraphNode{
+    let item = new GraphNode(value,[]);
+    return item;
+}
 
 
-findTargetSumWays([1,1,1,1,1],3)
+let graphNode1 = createGraphNode(1);
+let graphNode2 = createGraphNode(2);
+let graphNode3 = createGraphNode(3);
+let graphNode4 = createGraphNode(4);
+graphNode1.neighbors.push(graphNode2);
+graphNode1.neighbors.push(graphNode4);
+graphNode2.neighbors.push(graphNode1);
+graphNode2.neighbors.push(graphNode3);
+graphNode3.neighbors.push(graphNode2);
+graphNode3.neighbors.push(graphNode4);
+graphNode4.neighbors.push(graphNode1);
+graphNode4.neighbors.push(graphNode3);
+
+console.log(graphNode1)
+let node = cloneGraph(graphNode1);
+console.log('============')
+console.log(node);
+
+
