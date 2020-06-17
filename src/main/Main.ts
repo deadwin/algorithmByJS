@@ -1,7 +1,3 @@
-import { updateMatrix } from "../problems/updateMatrix";
+import { canVisitAllRooms } from "../problems/canVisitAllRooms";
 
-console.log(updateMatrix([
-    [0,2,2],
-    [2,1,0]
-]));
-console.log("aaaaaa")
+console.log(canVisitAllRooms([[1],[2],[3],[]]));
