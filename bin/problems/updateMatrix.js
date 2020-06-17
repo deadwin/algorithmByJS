@@ -18,22 +18,32 @@ exports.updateMatrix = function (matrix) {
                 depth++;
                 len--;
                 let cur = arr.shift();
-                console.log(len, "len");
-                debugger;
-                if (cur.i > 0 && matrix[cur.i - 1][cur.j] != 0) {
+                console.log(cur, "cur");
+                if (cur.i > 0) {
+                    if (matrix[cur.i - 1][cur.j] == 0) {
+                        break;
+                    }
                     arr.push({ i: cur.i - 1, j: cur.j });
                 }
                 if (cur.i < (matrix.length - 1) && matrix[cur.i + 1][cur.j] != 0) {
+                    if (matrix[cur.i + 1][cur.j] == 0) {
+                        break;
+                    }
                     arr.push({ i: cur.i + 1, j: cur.j });
                 }
-                if (cur.j > 0 && matrix[cur.i][cur.j - 1] != 0) {
+                if (cur.j > 0) {
+                    if (matrix[cur.i][cur.j - 1] == 0) {
+                        break;
+                    }
                     arr.push({ i: cur.i, j: cur.j - 1 });
                 }
-                if (cur.j < (matrix[cur.i].length - 1) && matrix[cur.i][cur.j + 1] != 0) {
+                if (cur.j < (matrix[cur.i].length - 1)) {
+                    if (matrix[cur.i][cur.j + 1] == 0) {
+                        break;
+                    }
                     arr.push({ i: cur.i, j: cur.j + 1 });
                 }
                 if (len == 0) {
-                    console.log(arr.length,"arrLEN")
                     if (arr.length == 0) {
                         break;
                     }
