@@ -12,7 +12,7 @@ export function canVisitAllRooms(rooms: number[][]): boolean {
     while(keys.length > 0 && visitedMap.size < rooms.length){
         let key = keys.shift();
         if(!visitedMap.has(key)){
-            visitedMap.add(key);
+            visitedMap.add(key); 
             keys = keys.concat(rooms[key]);
         }
     }
