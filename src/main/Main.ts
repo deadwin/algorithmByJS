@@ -1,6 +1,9 @@
-import { rotate } from "../historyProblems/rotate";
+import { setZeroes } from "../historyProblems/setZeroes";
 
-rotate([
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]])
+setZeroes(
+    [
+        [1,0,1],
+        [1,1,1],
+        [1,1,1],
+        [1,1,0]
+    ]);

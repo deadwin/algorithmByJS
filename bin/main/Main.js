@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const rotate_1 = require("../historyProblems/rotate");
-rotate_1.rotate([
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
+const setZeroes_1 = require("../historyProblems/setZeroes");
+setZeroes_1.setZeroes([
+    [1, 0, 1],
+    [1, 1, 1],
+    [1, 1, 1],
+    [1, 1, 0]
 ]);
