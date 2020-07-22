@@ -1,8 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const findDiagonalOrder_1 = require("../historyProblems/findDiagonalOrder");
-findDiagonalOrder_1.findDiagonalOrder([
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]);
+const longestCommonPrefix_1 = require("../historyProblems/longestCommonPrefix");
+longestCommonPrefix_1.longestCommonPrefix(["flower", "flower", "flower"]);
+longestCommonPrefix_1.longestCommonPrefix([""]);

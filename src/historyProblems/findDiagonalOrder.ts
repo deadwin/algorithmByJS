@@ -1,4 +1,6 @@
-
+/**
+ * 498. 对角线遍历
+ */
 
 /**
  * 对角线遍历
@@ -9,7 +11,6 @@ export function findDiagonalOrder(matrix: number[][]): number[] {
     let arr = [];
     if(!matrix || matrix.length == 0) return arr;
     let len = matrix[0].length - 1 + matrix.length;
-
     for(let sum = 0;sum < len;sum ++){
         if(sum % 2 == 0){
             let startY = sum;
@@ -21,7 +22,6 @@ export function findDiagonalOrder(matrix: number[][]): number[] {
             let endX = sum >= matrix[0].length ? matrix[0].length - 1 : sum;
             while(startY >= 0 && startX <= endX){
                 arr.push(matrix[startY][startX]);
-
                 startY --;
                 startX ++;
             }
@@ -34,14 +34,12 @@ export function findDiagonalOrder(matrix: number[][]): number[] {
             }
             let endX = sum >= matrix.length ? matrix.length - 1 : sum;
             while(startY >= 0 && startX <= endX){
-                // arr.push({startX,startY});
                 arr.push(matrix[startX][startY]);
                 startY --;
                 startX ++;
             }
         }
     }
-    // console.log(arr);
     return arr;
 };
 

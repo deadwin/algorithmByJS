@@ -1,7 +1,4 @@
-import { findDiagonalOrder } from "../historyProblems/findDiagonalOrder";
+import { longestCommonPrefix } from "../historyProblems/longestCommonPrefix";
 
-findDiagonalOrder([
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-])
+longestCommonPrefix(["flower","flower","flower"])
+longestCommonPrefix([""])
