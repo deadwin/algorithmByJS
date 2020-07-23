@@ -1,4 +1,3 @@
-import { longestCommonPrefix } from "../historyProblems/longestCommonPrefix";
+import { massage } from "../historyProblems/massage";
 
-longestCommonPrefix(["flower","flower","flower"])
-longestCommonPrefix([""])
+console.log(massage([2,1,4,5,3,1,1,3]))

@@ -1,5 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const longestCommonPrefix_1 = require("../historyProblems/longestCommonPrefix");
-longestCommonPrefix_1.longestCommonPrefix(["flower", "flower", "flower"]);
-longestCommonPrefix_1.longestCommonPrefix([""]);
+const massage_1 = require("../historyProblems/massage");
+console.log(massage_1.massage([2, 1, 4, 5, 3, 1, 1, 3]));
