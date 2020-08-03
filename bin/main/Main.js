@@ -1,6 +1,7 @@
 "use strict";
 // import { longestPalindrome } from "../problems/longestPalindrome";
 Object.defineProperty(exports, "__esModule", { value: true });
+const reverse_1 = require("../problems/reverse");
 // let str = "civilwartestingwhetherthatnaptionoranynartionsoco\
 // nceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometo\
 // dedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatn\
@@ -31,3 +32,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // }
 // insertSort(arr);
 // console.log(climbStairs(10));
+// console.log(2e31 / 10000);
+console.log(reverse_1.reverse(-2147483413));

@@ -2,4 +2,4 @@
  * @param {number} x
  * @return {number}
  */
-declare var reverse: (x: number) => number;
+export declare var reverse: (x: number) => number;

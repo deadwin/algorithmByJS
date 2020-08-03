@@ -4,6 +4,7 @@ import { findMagicIndex } from "../historyProblems/findMagicIndex";
 import { longestPalindrome } from "../problems/longestPalindrome";
 import { addStrings } from "../historyProblems/addStrings";
 import { climbStairs } from "../historyProblems/climbStairs";
+import { reverse } from "../problems/reverse";
 
 // let str = "civilwartestingwhetherthatnaptionoranynartionsoco\
 // nceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometo\
@@ -38,3 +39,6 @@ import { climbStairs } from "../historyProblems/climbStairs";
 // }
 // insertSort(arr);
 // console.log(climbStairs(10));
+
+// console.log(2e31 / 10000);
+console.log(reverse(-2147483413));
