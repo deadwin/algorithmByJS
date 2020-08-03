@@ -2,4 +2,4 @@
  * @param {string} s
  * @return {string}
  */
-export declare var longestPalindrome: (s: string) => string;
+export declare var longestPalindrome: (s: string) => void;

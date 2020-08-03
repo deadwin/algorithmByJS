@@ -5,9 +5,35 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @return {string}
  */
 exports.longestPalindrome = function (s) {
-    if (s.length == 0)
-        return "";
+    //     let len = s.length;
+    //     if(len == 0) return "";
+    //     let ans = s[0];
+    //     for(let i = 1;i < s.length - 1;i ++){
+    //         for(let )
+    //     }
 };
+// /**5. 最长回文子串
+//  * @param {string} s 
+//  * @return {string}
+//  */
+// export var longestPalindrome = function(s:string) {
+//     let len = s.length;
+//     let dp:Array<Array<number>> = new Array(len);
+//     for(let i = 0;i < dp.length;i ++){
+//         dp[i] = new Array(len);
+//     }
+//     let ans:string;
+//     for(let l = 0;l < len;l ++){
+//         for(let i = 0;i + 1 < len; i ++){
+//             let j = i + 1;
+//             if(l == 0){
+//                 dp[i][j] = 1;
+//             }else if(l == 1){
+//                 dp[i][j] = s[i] == s[j];
+//             }
+//         }
+//     }
+// };
 //暴力解法，错误解法
 // /**5. 最长回文子串
 //  * @param {string} s 
