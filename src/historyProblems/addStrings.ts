@@ -1,4 +1,4 @@
-/**
+/**415. 字符串相加
  * @param {string} num1
  * @param {string} num2
  * @return {string}
@@ -20,22 +20,23 @@ export var addStrings = function(num1:string, num2:string) {
             n1 = 0;
         }
         let l2 = len2 - index - 1;
-
         if(l2 >= 0){
             n2 = Number(num2[l2]);
         }else{
             n2 = 0;
         };
-        console.log(n1,n2,tik)
         let num = n1 + n2 + tik;
-        let temp = Math.floor(num / 10);
-        tik = num % 10;
+        tik = Math.floor(num / 10);
+        let temp = num % 10;
         ans += temp;
+        // console.log(temp,tik)
         index ++;
     }
-    console.log(ans);
-
-
+    // console.log(ans);
+    if(tik > 0){
+        ans += tik;
+    }
+    return ans.split("").reverse().join("");
 };
 
 "6"
