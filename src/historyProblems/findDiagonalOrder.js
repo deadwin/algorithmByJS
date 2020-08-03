@@ -1,9 +1,12 @@
 "use strict";
 /**
+ * 498. 对角线遍历
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+/**
  * 对角线遍历
  * @param matrix
  */
-Object.defineProperty(exports, "__esModule", { value: true });
 function findDiagonalOrder(matrix) {
     let arr = [];
     if (!matrix || matrix.length == 0)
@@ -33,14 +36,12 @@ function findDiagonalOrder(matrix) {
             }
             let endX = sum >= matrix.length ? matrix.length - 1 : sum;
             while (startY >= 0 && startX <= endX) {
-                // arr.push({startX,startY});
                 arr.push(matrix[startX][startY]);
                 startY--;
                 startX++;
             }
         }
     }
-    // console.log(arr);
     return arr;
 }
 exports.findDiagonalOrder = findDiagonalOrder;
