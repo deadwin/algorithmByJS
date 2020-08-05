@@ -1,7 +1,7 @@
 "use strict";
 // import { longestPalindrome } from "../problems/longestPalindrome";
 Object.defineProperty(exports, "__esModule", { value: true });
-const reverse_1 = require("../problems/reverse");
+const coinChange_1 = require("../historyProblems/coinChange");
 // let str = "civilwartestingwhetherthatnaptionoranynartionsoco\
 // nceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometo\
 // dedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatn\
@@ -17,20 +17,5 @@ const reverse_1 = require("../problems/reverse");
 // //     (str));
 // console.log(str.length)
 // let arr = [45,100,25,10];
-// var insertSort = function(arr: Array<number>):void {
-//     let ans = [];
-//     ans.push(arr[0]);
-//     for(let i = 1;i < arr.length;i ++){
-//         let cur = i;
-//         while(cur - 1 >= 0 && ans[cur - 1] > arr[i]){
-//             ans[cur] = ans[cur - 1];
-//             cur --;
-//         }
-//         ans[cur] = arr[i];
-//     }
-//     console.log(ans);
-// }
-// insertSort(arr);
-// console.log(climbStairs(10));
-// console.log(2e31 / 10000);
-console.log(reverse_1.reverse(-2147483413));
+//  f(n) = Math.min(f(n - item[0]) + 1,f(n - item[1]) + 1 ..., f(n - item[item.length - 1]) + 1);
+console.log(coinChange_1.coinChange([2, 5, 7], 28));
