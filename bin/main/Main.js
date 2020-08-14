@@ -1,17 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const _5_______1 = require("../historyProblems/5.\u6700\u957F\u56DE\u6587\u5B50\u4E32");
-let str = "civilwartestingwhetherthatnaptionoranynartionsoco\
-nceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometo\
-dedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatn\
-ationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedi\
-catewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledhe\
-rehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotleno\
-rlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrath\
-ertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainin\
-gbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolv\
-ethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthep\
-eopleshallnotperishfromtheearth";
 // // console.log(longestPalindrome
 // //     (str));
 // console.log(str.length)

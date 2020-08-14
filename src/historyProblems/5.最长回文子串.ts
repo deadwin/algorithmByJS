@@ -5,6 +5,18 @@
  * [5] 最长回文子串
  */
 
+// let str = "civilwartestingwhetherthatnaptionoranynartionsoco\
+// nceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometo\
+// dedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatn\
+// ationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedi\
+// catewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledhe\
+// rehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotleno\
+// rlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrath\
+// ertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainin\
+// gbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolv\
+// ethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthep\
+// eopleshallnotperishfromtheearth";
+
 export function longestPalindrome(s:string):string{
     if(s.length < 2) return s;
     let dp = new Array(s.length);
