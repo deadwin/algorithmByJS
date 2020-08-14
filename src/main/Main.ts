@@ -1,4 +1,5 @@
 import { longestPalindrome } from "../historyProblems/5.最长回文子串"
+import { reverseWords } from "../historyProblems/reverseWords"
 
 
 
@@ -19,8 +20,7 @@ import { longestPalindrome } from "../historyProblems/5.最长回文子串"
  * 
  **/
 
-console.log(longestPalindrome("ac"))
-
+reverseWords("a good   example")
 
 
 // console.log(str.sl);

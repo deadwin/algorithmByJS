@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const _5_______1 = require("../historyProblems/5.\u6700\u957F\u56DE\u6587\u5B50\u4E32");
+const reverseWords_1 = require("../historyProblems/reverseWords");
 // // console.log(longestPalindrome
 // //     (str));
 // console.log(str.length)
@@ -13,7 +13,7 @@ const _5_______1 = require("../historyProblems/5.\u6700\u957F\u56DE\u6587\u5B50\
   else if(j - i == 1) f[i][j] = s[i] == s[j]
  *
  **/
-console.log(_5_______1.longestPalindrome("ac"));
+reverseWords_1.reverseWords("a good   example");
 // console.log(str.sl);
 // let arr = [1,2,3];
 // console.log(str.splice(1,1))
