@@ -1,3 +1,4 @@
+import { longestPalindrome } from "../historyProblems/5.最长回文子串"
 
 
 let str = "civilwartestingwhetherthatnaptionoranynartionsoco\
@@ -28,33 +29,7 @@ eopleshallnotperishfromtheearth"
  * 
  **/
 
-let func = (s:string) =>{
-    if(s.length < 2) return s;
-
-    let dp = new Array(s.length);
-    for(let i = 0; i < s.length; i++){
-        dp[i] = new Array(s.length);
-    }
-    for(let i = 0;i < s.length;i ++){
-        dp[i][i] = true;
-    }
-    let ans = ""
-    for(let i = dp.length - 1;i >= 0;i --){
-        for(let j = i;j < dp.length;j ++){
-            if(j - i == 1){
-                dp[i][j] = s[i] == s[j];
-            }else{
-                dp[i][j] = dp[i + 1][j - 1] && s[i] == s[j];
-            }
-            if(dp[i][j] == true && (j - i) >= ans.length){
-                ans = s.substr(i,j - i + 1);
-            }
-        }
-    }
-    return ans;
-}
-
-func(str)
+console.log(longestPalindrome("ac"))
 
 
 

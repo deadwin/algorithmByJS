@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const _5_______1 = require("../historyProblems/5.\u6700\u957F\u56DE\u6587\u5B50\u4E32");
 let str = "civilwartestingwhetherthatnaptionoranynartionsoco\
 nceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometo\
 dedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatn\
@@ -21,33 +24,7 @@ eopleshallnotperishfromtheearth";
   else if(j - i == 1) f[i][j] = s[i] == s[j]
  *
  **/
-let func = (s) => {
-    if (s.length < 2)
-        return s;
-    let dp = new Array(s.length);
-    for (let i = 0; i < s.length; i++) {
-        dp[i] = new Array(s.length);
-    }
-    for (let i = 0; i < s.length; i++) {
-        dp[i][i] = true;
-    }
-    let ans = "";
-    for (let i = dp.length - 1; i >= 0; i--) {
-        for (let j = i; j < dp.length; j++) {
-            if (j - i == 1) {
-                dp[i][j] = s[i] == s[j];
-            }
-            else {
-                dp[i][j] = dp[i + 1][j - 1] && s[i] == s[j];
-            }
-            if (dp[i][j] == true && (j - i) >= ans.length) {
-                ans = s.substr(i, j - i + 1);
-            }
-        }
-    }
-    return ans;
-};
-func(str);
+console.log(_5_______1.longestPalindrome("ac"));
 // console.log(str.sl);
 // let arr = [1,2,3];
 // console.log(str.splice(1,1))

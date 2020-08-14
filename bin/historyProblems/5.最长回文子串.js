@@ -1,7 +1,7 @@
 "use strict";
 /*
  * @lc app=leetcode.cn id=5 lang=typescript
- *
+ *  2020年8月15日
  * [5] 最长回文子串
  */
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -15,16 +15,17 @@ function longestPalindrome(s) {
     for (let i = 0; i < s.length; i++) {
         dp[i][i] = true;
     }
-    let ans = "";
+    //初始值，当s长度为2时，需要用到
+    let ans = s[0];
     for (let i = dp.length - 1; i >= 0; i--) {
-        for (let j = i; j < dp.length; j++) {
+        for (let j = i + 1; j < dp.length; j++) {
             if (j - i == 1) {
                 dp[i][j] = s[i] == s[j];
             }
             else {
                 dp[i][j] = dp[i + 1][j - 1] && s[i] == s[j];
             }
-            if (dp[i][j] == true && (j - i) >= ans.length) {
+            if (dp[i][j] == true && (j - i + 1) >= ans.length) {
                 ans = s.substr(i, j - i + 1);
             }
         }
