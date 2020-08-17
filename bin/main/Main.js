@@ -1,24 +1,36 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-// let str = "civilwartestingwhetherthatnaptionoranynartionsoco\
-// nceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometo\
-// dedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatn\
-// ationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedi\
-// catewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledhe\
-// rehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotleno\
-// rlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrath\
-// ertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainin\
-// gbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolv\
-// ethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthep\
-// eopleshallnotperishfromtheearth"
-let str = "eabcba";
-// // console.log(longestPalindrome
-// //     (str));
-// console.log(str.length)
-const _5_______1 = require("../problems/5.\u6700\u957F\u56DE\u6587\u5B50\u4E32");
-// let arr = [45,100,25,10];
-//  f(n) = Math.min(f(n - item[0]) + 1,f(n - item[1]) + 1 ..., f(n - item[item.length - 1]) + 1);
-console.log(_5_______1.longestPalindrome(str));
-// console.log(str.sl);
-// let arr = [1,2,3];
-// console.log(str.splice(1,1))
+var buildNext = (p) => {
+    let m = p.length;
+    let j = 0;
+    let n = new Array(m);
+    n[0] = -1;
+    let t = n[0];
+    while (j < m - 1) {
+        if ((t < 0) || p[j] == p[t]) {
+            j++;
+            t++;
+            n[j] = t;
+        }
+        else {
+            t = n[t];
+        }
+    }
+    console.log(n, "n");
+    return n;
+};
+var match = (text, str) => {
+    let next = buildNext(str);
+    console.log(next);
+    let m = text.length, i = 0;
+    let n = str.length, j = 0;
+    while (j < n && i < m) {
+        if (0 > j || text[i] == str[j]) {
+            i++;
+            j++;
+        }
+        else {
+            j = next[j];
+        }
+    }
+    return i - j;
+};
+console.log(match("abcbbacerebcbaaavvv", "abcbaa"));
