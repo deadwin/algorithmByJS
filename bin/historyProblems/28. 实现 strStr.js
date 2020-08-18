@@ -29,7 +29,6 @@ exports.strStr = function (haystack, needle) {
     if (needle.length > haystack.length)
         return -1;
     let next = buildNext(needle);
-    console.log(next);
     let m = haystack.length, i = 0;
     let n = needle.length, j = 0;
     while (j < n && i < m) {
