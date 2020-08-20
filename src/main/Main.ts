@@ -1,3 +1,3 @@
-import { removeElement } from "../historyProblems/removeElement";
+import { minSubArrayLen } from "../historyProblems/minSubArrayLen";
 
-console.log(removeElement( [0,1,2,2,3,0,4,2],2))
+console.log(minSubArrayLen(15, [1,2,3,4,5]))
