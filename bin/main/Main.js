@@ -1,4 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const _557_reverseWords_1 = require("../historyProblems/557.reverseWords");
-console.log(_557_reverseWords_1.reverseWords("Let's take LeetCode contest"));
+const findMin_1 = require("../problems/findMin");
+console.log(findMin_1.findMin([7]));
+console.log(findMin_1.findMin([7, 0]));
+console.log(findMin_1.findMin([7, 8]));
+console.log(findMin_1.findMin([7, 8, 9]));
+console.log(findMin_1.findMin([7, 8, 9, 0]));
+console.log(findMin_1.findMin([7, 8, 9, 0, 1]));
+console.log(findMin_1.findMin([7, 8, 9, 0, 1, 2]));
+console.log(findMin_1.findMin([7, 8, 9, 0, 1, 2, 3]));
+console.log(findMin_1.findMin([7, 8, 9, 0, 1, 2, 3, 4, 5, 6]));
