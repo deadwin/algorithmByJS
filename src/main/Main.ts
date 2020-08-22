@@ -1,3 +1,4 @@
 import { minSubArrayLen } from "../historyProblems/minSubArrayLen";
+import { generate } from "../historyProblems/generate";
 
-console.log(minSubArrayLen(15, [1,2,3,4,5]))
+generate(5);
