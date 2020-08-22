@@ -1,4 +1,4 @@
-import { minSubArrayLen } from "../historyProblems/minSubArrayLen";
-import { generate } from "../historyProblems/generate";
+import { getRow } from "../historyProblems/getRow";
 
-generate(5);
+
+console.log(getRow(1))
