@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const getRow_1 = require("../historyProblems/getRow");
-console.log(getRow_1.getRow(1));
+const _557_reverseWords_1 = require("../historyProblems/557.reverseWords");
+console.log(_557_reverseWords_1.reverseWords("Let's take LeetCode contest"));
