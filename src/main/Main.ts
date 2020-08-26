@@ -1,4 +1,3 @@
 import { firstUniqChar, firstUniqChar_2 } from "../historyProblems/firstUniqChar";
-
-console.log(firstUniqChar_2("aadadaad"));
-
+import { isAnagram } from "../historyProblems/isAnagram";
+console.log(isAnagram("abc","abe"))
