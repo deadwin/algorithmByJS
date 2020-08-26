@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const isAnagram_1 = require("../historyProblems/isAnagram");
-console.log(isAnagram_1.isAnagram("abc", "abe"));
+const isPalindrome_1 = require("../problems/isPalindrome");
+console.log(isPalindrome_1.isPalindrome(" "));
