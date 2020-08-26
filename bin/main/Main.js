@@ -1,12 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const findMin_1 = require("../problems/findMin");
-console.log(findMin_1.findMin([7]));
-console.log(findMin_1.findMin([7, 0]));
-console.log(findMin_1.findMin([7, 8]));
-console.log(findMin_1.findMin([7, 8, 9]));
-console.log(findMin_1.findMin([7, 8, 9, 0]));
-console.log(findMin_1.findMin([7, 8, 9, 0, 1]));
-console.log(findMin_1.findMin([7, 8, 9, 0, 1, 2]));
-console.log(findMin_1.findMin([7, 8, 9, 0, 1, 2, 3]));
-console.log(findMin_1.findMin([7, 8, 9, 0, 1, 2, 3, 4, 5, 6]));
+const firstUniqChar_1 = require("../problems/firstUniqChar");
+console.log(firstUniqChar_1.firstUniqChar("aadadaad"));
