@@ -1,4 +1,4 @@
-import { firstUniqChar } from "../problems/firstUniqChar";
+import { firstUniqChar, firstUniqChar_2 } from "../historyProblems/firstUniqChar";
 
-console.log(firstUniqChar("aadadaad"));
+console.log(firstUniqChar_2("aadadaad"));
 
