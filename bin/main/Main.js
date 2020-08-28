@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const isPalindrome_1 = require("../problems/isPalindrome");
-console.log(isPalindrome_1.isPalindrome(" "));
+const myAtoi_1 = require("../historyProblems/myAtoi");
+console.log(myAtoi_1.myAtoi("- 234"), "ans");

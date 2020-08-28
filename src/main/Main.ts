@@ -1,4 +1,2 @@
-import { firstUniqChar, firstUniqChar_2 } from "../historyProblems/firstUniqChar";
-import { isAnagram } from "../historyProblems/isAnagram";
-import { isPalindrome } from "../problems/isPalindrome";
-console.log(isPalindrome(" "))
+import { myAtoi } from "../historyProblems/myAtoi";
+console.log(myAtoi("- 234"),"ans")
