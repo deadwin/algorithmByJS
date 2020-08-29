@@ -1,19 +1,19 @@
 import { myAtoi } from "../historyProblems/myAtoi";
 import { countAndSay } from "../historyProblems/countAndSay";
 import { removeNthFromEnd } from "../historyProblems/removeNthFromEnd";
+import { reverseList, reverseList_2 } from "../problems/reverseList";
 
 let node:ListNode = {
     val : 1,
-    next :null
-    // next : {
-    //     val : 2,
-    //     next: {
-    //         val : 3,
-    //         next : null
-    //     }
-    // }
+    next : {
+        val : 2,
+        next: {
+            val : 3,
+            next : null
+        }
+    }
 }
-console.log(removeNthFromEnd(node,1))
+console.log(reverseList_2(node))
 
 
 
