@@ -6,8 +6,6 @@
  *     this.next = null;
  * }
 */
-class ListNode {
-}
 /**
  * @param {ListNode} node
  * @return {void} Do not return anything, modify node in-place instead.

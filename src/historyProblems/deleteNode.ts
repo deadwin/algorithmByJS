@@ -7,10 +7,6 @@
  * }
 */
 
-class ListNode{
-    public val:any;
-    public next:ListNode;
-}
 /**
  * @param {ListNode} node
  * @return {void} Do not return anything, modify node in-place instead.

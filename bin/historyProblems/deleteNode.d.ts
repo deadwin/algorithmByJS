@@ -6,10 +6,6 @@
  *     this.next = null;
  * }
 */
-declare class ListNode {
-    val: any;
-    next: ListNode;
-}
 /**
  * @param {ListNode} node
  * @return {void} Do not return anything, modify node in-place instead.
