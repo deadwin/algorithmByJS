@@ -9,4 +9,4 @@
  * @param {ListNode} head
  * @return {boolean}
  */
-declare var isPalindrome: (head: ListNode) => boolean;
+declare var isPalindrome_234: (head: ListNode) => boolean;

@@ -1,4 +1,4 @@
 declare interface ListNode{
-     val:any;
+     val:number;
      next:ListNode;
 }

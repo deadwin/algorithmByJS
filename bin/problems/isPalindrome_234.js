@@ -9,7 +9,8 @@
  * @param {ListNode} head
  * @return {boolean}
  */
-var isPalindrome = function (head) {
+var isPalindrome_234 = function (head) {
+    //解法1，借用数组
     let arr = [];
     while (head !== null) {
         arr.push(head.val);
@@ -21,4 +22,7 @@ var isPalindrome = function (head) {
         }
     }
     return true;
+    // 进阶：
+    // 你能否用 O(n) 时间复杂度和 O(1) 空间复杂度解决此题？
+    //解法2
 };
