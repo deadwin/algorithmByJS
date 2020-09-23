@@ -9,14 +9,6 @@ import { merge } from "../historyProblems/merge";
 
 
 
-/**
- * @param {number[]} prices
- * @return {number}
- */
-function maxProfit(prices: number[]): number {
-    
-};
-
 
 
 
