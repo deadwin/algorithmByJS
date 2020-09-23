@@ -8,6 +8,21 @@ import { merge } from "../historyProblems/merge";
 
 
 
+
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+function maxProfit(prices: number[]): number {
+    
+};
+
+
+
+
+
+
+
 // console.log(Number("11311123113112211"))
 // console.log(Number(1311123113112212) + Number(10000000000000000))
 // console.log(countAndSay(2));
