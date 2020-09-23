@@ -3,8 +3,8 @@ import { countAndSay } from "../historyProblems/countAndSay";
 import { removeNthFromEnd } from "../historyProblems/removeNthFromEnd";
 import { TreeNode } from "../problems/isSameTree";
 import { BigNumber } from "../bigNumber/bignumber";
+import { merge } from "../historyProblems/merge";
 // import BigNumber from "../bigNumber/bignumber";
-
 
 
 
