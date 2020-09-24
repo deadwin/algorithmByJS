@@ -9,7 +9,7 @@ import { maxSubArray } from "../historyProblems/maxSubArray";
 
 
 
-console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+console.log(maxSubArray([1,2]))
 
 
 
