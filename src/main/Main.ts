@@ -5,11 +5,12 @@ import { TreeNode } from "../problems/isSameTree";
 import { BigNumber } from "../bigNumber/bignumber";
 import { merge } from "../historyProblems/merge";
 import { maxSubArray } from "../historyProblems/maxSubArray";
+import { rob } from "../historyProblems/rob";
 // import BigNumber from "../bigNumber/bignumber";
 
 
 
-console.log(maxSubArray([1,2]))
+console.log(rob([2,1,1,2]))
 
 
 

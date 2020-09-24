@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const maxSubArray_1 = require("../historyProblems/maxSubArray");
+const rob_1 = require("../historyProblems/rob");
 // import BigNumber from "../bigNumber/bignumber";
-console.log(maxSubArray_1.maxSubArray([1, 2]));
+console.log(rob_1.rob([2, 1, 1, 2]));
 // console.log(Number("11311123113112211"))
 // console.log(Number(1311123113112212) + Number(10000000000000000))
 // console.log(countAndSay(2));
