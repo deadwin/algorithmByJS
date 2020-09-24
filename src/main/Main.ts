@@ -4,12 +4,12 @@ import { removeNthFromEnd } from "../historyProblems/removeNthFromEnd";
 import { TreeNode } from "../problems/isSameTree";
 import { BigNumber } from "../bigNumber/bignumber";
 import { merge } from "../historyProblems/merge";
+import { maxSubArray } from "../historyProblems/maxSubArray";
 // import BigNumber from "../bigNumber/bignumber";
 
 
 
-
-
+console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
 
 
 
