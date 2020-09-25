@@ -7,11 +7,12 @@ import { merge } from "../historyProblems/merge";
 import { maxSubArray } from "../historyProblems/maxSubArray";
 import { rob } from "../historyProblems/rob";
 import { Solution_384 } from "../historyProblems/Solution_384";
+import { countPrimes } from "../problems/countPrimes";
 // import BigNumber from "../bigNumber/bignumber";
 
 
 
-
+console.log(countPrimes(10));
 
 
 
