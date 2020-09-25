@@ -6,11 +6,19 @@ import { BigNumber } from "../bigNumber/bignumber";
 import { merge } from "../historyProblems/merge";
 import { maxSubArray } from "../historyProblems/maxSubArray";
 import { rob } from "../historyProblems/rob";
+import { Solution_384 } from "../problems/Solution_384";
 // import BigNumber from "../bigNumber/bignumber";
 
 
 
-console.log(rob([2,1,1,2]))
+let arr = [1,2,3];
+console.log(new Solution_384(arr).shuffle());
+console.log(new Solution_384(arr).reset());
+
+console.log(new Solution_384(arr).shuffle());
+
+console.log(new Solution_384(arr).shuffle());
+
 
 
 
