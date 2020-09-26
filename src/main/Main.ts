@@ -9,11 +9,11 @@ import { rob } from "../historyProblems/rob";
 import { Solution_384 } from "../historyProblems/Solution_384";
 import { countPrimes } from "../historyProblems/countPrimes";
 import { isPowerOfThree } from "../historyProblems/isPowerOfThree";
-import { missingNumber } from "../problems/missingNumber";
+import { missingNumber } from "../historyProblems/missingNumber";
 // import BigNumber from "../bigNumber/bignumber";
 
 
-console.log(missingNumber([0,1]))
+console.log(pathSum([0,1]))
 
 
 // console.log(Number("11311123113112211"))
