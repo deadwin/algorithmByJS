@@ -1,11 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const isPowerOfThree_1 = require("../historyProblems/isPowerOfThree");
+const missingNumber_1 = require("../problems/missingNumber");
 // import BigNumber from "../bigNumber/bignumber";
-console.log(isPowerOfThree_1.isPowerOfThree(1));
-console.log(isPowerOfThree_1.isPowerOfThree(3));
-console.log(isPowerOfThree_1.isPowerOfThree(9));
-console.log(isPowerOfThree_1.isPowerOfThree(45));
+console.log(missingNumber_1.missingNumber([0, 1]));
 // console.log(Number("11311123113112211"))
 // console.log(Number(1311123113112212) + Number(10000000000000000))
 // console.log(countAndSay(2));

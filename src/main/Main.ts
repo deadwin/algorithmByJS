@@ -9,18 +9,11 @@ import { rob } from "../historyProblems/rob";
 import { Solution_384 } from "../historyProblems/Solution_384";
 import { countPrimes } from "../historyProblems/countPrimes";
 import { isPowerOfThree } from "../historyProblems/isPowerOfThree";
+import { missingNumber } from "../problems/missingNumber";
 // import BigNumber from "../bigNumber/bignumber";
 
 
-
-
-
-console.log(isPowerOfThree(1))
-console.log(isPowerOfThree(3))
-
-console.log(isPowerOfThree(9))
-console.log(isPowerOfThree(45))
-
+console.log(missingNumber([0,1]))
 
 
 // console.log(Number("11311123113112211"))
