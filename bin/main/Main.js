@@ -1,7 +1,26 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // import BigNumber from "../bigNumber/bignumber";
-console.log(pathSum([0, 1]));
+// console.log(maximalSquare(
+//     [
+//         ["1","0"],
+//         ["1","0"]
+//     ]
+//     ))
+//     console.log(maximalSquare(
+// [
+//     ["1","1"],
+//     ["1","1"],
+//     ["1","1"]
+// ]
+//         ))
+//         console.log(maximalSquare(
+// [   ["1","0","1","0","0"],
+//     ["1","0","1","1","1"],
+//     ["1","1","1","1","1"],
+//     ["1","0","0","1","0"]
+// ]
+//                     ))
 // console.log(Number("11311123113112211"))
 // console.log(Number(1311123113112212) + Number(10000000000000000))
 // console.log(countAndSay(2));

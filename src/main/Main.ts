@@ -10,11 +10,34 @@ import { Solution_384 } from "../historyProblems/Solution_384";
 import { countPrimes } from "../historyProblems/countPrimes";
 import { isPowerOfThree } from "../historyProblems/isPowerOfThree";
 import { missingNumber } from "../historyProblems/missingNumber";
+import { maximalSquare } from "../historyProblems/maximalSquare";
 // import BigNumber from "../bigNumber/bignumber";
 
 
-console.log(pathSum([0,1]))
 
+
+// console.log(maximalSquare(
+//     [
+//         ["1","0"],
+//         ["1","0"]
+//     ]
+//     ))
+
+//     console.log(maximalSquare(
+// [
+//     ["1","1"],
+//     ["1","1"],
+//     ["1","1"]
+// ]
+//         ))
+
+//         console.log(maximalSquare(
+// [   ["1","0","1","0","0"],
+//     ["1","0","1","1","1"],
+//     ["1","1","1","1","1"],
+//     ["1","0","0","1","0"]
+// ]
+//                     ))
 
 // console.log(Number("11311123113112211"))
 // console.log(Number(1311123113112212) + Number(10000000000000000))
