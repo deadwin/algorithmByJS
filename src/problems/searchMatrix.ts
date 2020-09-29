@@ -13,4 +13,5 @@ var searchMatrix = function(matrix:number[][], target:number):boolean {
             
         }
     }
+    return null;
 };

@@ -11,4 +11,5 @@ var searchMatrix = function (matrix, target) {
         else {
         }
     }
+    return null;
 };
