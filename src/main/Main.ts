@@ -11,6 +11,7 @@ import { countPrimes } from "../historyProblems/countPrimes";
 import { isPowerOfThree } from "../historyProblems/isPowerOfThree";
 import { missingNumber } from "../historyProblems/missingNumber";
 import { maximalSquare } from "../historyProblems/maximalSquare";
+import { CQueue } from "../historyProblems/CQueue";
 // import BigNumber from "../bigNumber/bignumber";
 
 
