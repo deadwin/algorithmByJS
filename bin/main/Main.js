@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const fourSum_1 = require("../problems/fourSum");
 // import BigNumber from "../bigNumber/bignumber";
+fourSum_1.fourSum([-3, -2, -1, 0, 0, 1, 2, 3], 0);
 // console.log(maximalSquare(
 //     [
 //         ["1","0"],
