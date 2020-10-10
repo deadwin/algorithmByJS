@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const fourSum_1 = require("../problems/fourSum");
+const reverseLeftWords_1 = require("../problems/reverseLeftWords");
 // import BigNumber from "../bigNumber/bignumber";
-fourSum_1.fourSum([-3, -2, -1, 0, 0, 1, 2, 3], 0);
+let str = "lrloseumgh";
+console.log(reverseLeftWords_1.reverseLeftWords(str, 6));
 // console.log(maximalSquare(
 //     [
 //         ["1","0"],
