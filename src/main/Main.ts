@@ -12,11 +12,14 @@ import { isPowerOfThree } from "../historyProblems/isPowerOfThree";
 import { missingNumber } from "../historyProblems/missingNumber";
 import { maximalSquare } from "../historyProblems/maximalSquare";
 import { CQueue } from "../historyProblems/CQueue";
-import { fourSum } from "../problems/fourSum";
+import { fourSum } from "../historyProblems/fourSum";
+import { maxSlidingWindow } from "../problems/maxSlidingWindow";
 // import BigNumber from "../bigNumber/bignumber";
 
 
-fourSum([-3,-2,-1,0,0,1,2,3],0);
+// fourSum([-3,-2,-1,0,0,1,2,3],0);
+let nums = [9,10,9,-7,-4,-8,2,-6],k = 5
+maxSlidingWindow(nums,k)
 
 // console.log(maximalSquare(
 //     [
