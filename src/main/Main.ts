@@ -3,7 +3,7 @@ import { maxSlidingWindow } from "../problems/maxSlidingWindow";
 
 
 // fourSum([-3,-2,-1,0,0,1,2,3],0);
-let nums = [9,8,7,6,5,4,3,2,1],k = 2
+let nums = [3,2,1,0],k = 4
 maxSlidingWindow(nums,k)
 
 // console.log(maximalSquare(
