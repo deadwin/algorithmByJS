@@ -1,4 +1,5 @@
-/**
+/**剑指 Offer 59 - I. 滑动窗口的最大值
+ * 2020年10月12日
  * @param {number[]} nums
  * @param {number} k
  * @return {number[]}
@@ -7,31 +8,26 @@ export var maxSlidingWindow = function(nums:number[], k:number):number[] {
     if(!nums || nums.length == 0) return [];
     let ansArr = [];
     let flag = 0;
-    let max = nums[flag];
+    let index = flag;
     for(let i = 0; i < nums.length;i ++){
-        let cur = nums[i];
-        console.log(i - flag,"len",i);
-        if(i - flag >= k){
-            max = nums[i];
+        if(i - flag > k - 1){
+            index = flag + 1;
             while(flag < i){
                 flag ++;
-                if(max < nums[flag]){
-                    console.log(max,"max",flag,i)
-                    max = nums[flag];
+                if(nums[index] < nums[flag]){
+                    index = flag;
                 }
             }
+            flag = index;
         }else{
-            if(max < cur){
-                max = cur;
-                flag = i;
+            if(nums[index] < nums[i]){
+                index = i;
             }
         }
-        console.log(i,k- 1,max)
         if(i >= k - 1){
-            ansArr.push(max);
+            ansArr.push(nums[index]);
         }
     }
-    
-    console.log(ansArr);
+    // console.log(ansArr);
     return ansArr;
 };
