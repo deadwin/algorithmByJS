@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const maxSlidingWindow_1 = require("../problems/maxSlidingWindow");
+const maxSlidingWindow_1 = require("../historyProblems/maxSlidingWindow");
 // import BigNumber from "../bigNumber/bignumber";
 // fourSum([-3,-2,-1,0,0,1,2,3],0);
 let nums = [3, 2, 1, 0], k = 4;

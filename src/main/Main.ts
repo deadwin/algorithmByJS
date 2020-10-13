@@ -1,4 +1,4 @@
-import { maxSlidingWindow } from "../problems/maxSlidingWindow";
+import { maxSlidingWindow } from "../historyProblems/maxSlidingWindow";
 // import BigNumber from "../bigNumber/bignumber";
 
 
