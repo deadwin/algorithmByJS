@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * 53. 最大子序和 /剑指 Offer 42. 连续子数组的最大和
- * 2020年9月24日
+ * 2020年9月24日/2020年10月14日
  *
  * @param nums
  */
