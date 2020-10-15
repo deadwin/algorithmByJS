@@ -1,28 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const maxSlidingWindow_1 = require("../historyProblems/maxSlidingWindow");
 // import BigNumber from "../bigNumber/bignumber";
-// fourSum([-3,-2,-1,0,0,1,2,3],0);
-let nums = [3, 2, 1, 0], k = 4;
-maxSlidingWindow_1.maxSlidingWindow(nums, k);
-/**
- * @param {number[]} nums
- * @return {number}
- */
-var maxSubArray = function (nums) {
-    //f(0) = 0, f(1) = 1
-    //f(n) = max(f(n - 1) + n,f(n - 1))
-    if (!nums || nums.length == 0)
-        return 0;
-    let arr = new Array(nums.length);
-    arr[0] = nums[0];
-    let ans = arr[0];
-    for (let i = 1; i < nums.length; i++) {
-        arr[i] = Math.max(arr[i - 1] + nums[i], nums[i]);
-        ans = Math.max(arr[i], ans);
+let arr = [100, 101, 102, 103, 104];
+let max = 104;
+let cur = 103;
+let size = arr.length;
+let begin = cur - (cur + size - max) + 1;
+console.log(begin, "be");
+for (let j = begin; j < cur; j++) {
+    if (arr[j] <= cur) {
+        arr[j] = 0;
     }
-    return ans;
-};
+}
+console.log(arr);
 // console.log(maximalSquare(
 //     [
 //         ["1","0"],
