@@ -1,11 +1,13 @@
 import { maxSlidingWindow } from "../historyProblems/maxSlidingWindow";
 import { intersection } from "../historyProblems/intersection";
 import { translateNum } from "../historyProblems/translateNum";
+import { validMountainArray } from "../historyProblems/validMountainArray";
 // import BigNumber from "../bigNumber/bignumber";
-console.log(translateNum(188221))  //4
-console.log(translateNum(624))   //2      6 2 4, 6,24,
-console.log(translateNum(506))   //1
-console.log(translateNum(220))   //3         2 2 0 , 2 20,  22 0      //1 ,2, 3
+console.log(validMountainArray([2,1]))
+console.log(validMountainArray([0,3,2,1]))
+console.log(validMountainArray([3,5,5]))
+console.log(validMountainArray([0,2,3,4,5,2,1,0]))
+
 
 /**
  * 1 8 8 2 2
