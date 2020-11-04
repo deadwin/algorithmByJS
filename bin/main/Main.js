@@ -1,11 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const validMountainArray_1 = require("../historyProblems/validMountainArray");
+const nthUglyNumber_1 = require("../historyProblems/nthUglyNumber");
 // import BigNumber from "../bigNumber/bignumber";
-console.log(validMountainArray_1.validMountainArray([2, 1]));
-console.log(validMountainArray_1.validMountainArray([0, 3, 2, 1]));
-console.log(validMountainArray_1.validMountainArray([3, 5, 5]));
-console.log(validMountainArray_1.validMountainArray([0, 2, 3, 4, 5, 2, 1, 0]));
+nthUglyNumber_1.nthUglyNumber(10);
 /**
  * 1 8 8 2 2
  * 1 8 8 22
