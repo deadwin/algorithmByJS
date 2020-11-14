@@ -1,2 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const isSameTree_1 = require("../problems/isSameTree");
+const levelOrder_3_1 = require("../problems/levelOrder_3");
+let a = new isSameTree_1.TreeNode();
+a.val = 3;
+a.left = new isSameTree_1.TreeNode();
+a.left.val = 9;
+a.right = new isSameTree_1.TreeNode();
+a.right.val = 20;
+let b = a.right;
+b.left = new isSameTree_1.TreeNode();
+b.left.val = 15;
+b.right = new isSameTree_1.TreeNode();
+b.right.val = 7;
+console.log(levelOrder_3_1.levelOrder_3(a));
