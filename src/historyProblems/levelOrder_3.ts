@@ -16,7 +16,7 @@
  * }
  */
 
-import { TreeNode } from "./isSameTree";
+import { TreeNode } from "../problems/isSameTree";
 
 export function levelOrder_3(root: TreeNode | null): number[][] {
     let ansArr = [];
