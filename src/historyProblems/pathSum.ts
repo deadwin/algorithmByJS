@@ -1,5 +1,5 @@
-/**113. 路径总和 II
- * 2020年9月26日
+/**113. 路径总和 II   剑指 Offer 34. 二叉树中和为某一值的路径
+ * 2020年9月26日  第二遍2020年11月15日 12点00分 12点14分
  * DFS 解法
  * 
  * Definition for a binary tree node.
@@ -41,4 +41,30 @@ export function pathSum(root: TreeNode | null, sum: number): number[][] {
     }
     serach(root,sum,[]);
     return ansArr;
+
+
+    // let ansArr = [];
+    // if(!root) return ansArr;
+    // let getAns = function(node:TreeNode,sum:number,arr:Array<number>){
+    //     sum -= node.val;
+    //     arr.push(node.val);
+    //     if(!node.left && !node.right){
+    //         if(sum == 0){
+    //             ansArr.push(arr);
+    //         }
+    //         return;
+    //     }
+    //     if(node.left){
+    //         let newArr:Array<number> = [];
+    //         newArr.push(...arr);
+    //         getAns(node.left,sum,newArr);
+    //     }
+    //     if(node.right){
+    //         let newArr:Array<number> = [];
+    //         newArr.push(...arr);
+    //         getAns(node.right,sum,newArr);
+    //     }
+    // }
+    // getAns(root,sum,[]);
+    // return ansArr;
 };
