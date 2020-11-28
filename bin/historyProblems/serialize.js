@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  *     this.left = this.right = null;
  * }
  */
-const isSameTree_1 = require("./isSameTree");
+const isSameTree_1 = require("../problems/isSameTree");
 /**
  * Encodes a tree to a single string.
  *

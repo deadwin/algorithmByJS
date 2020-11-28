@@ -30,3 +30,5 @@ function isAnagram(s: string, t: string): boolean {
     return flag;
 };
 console.log(isAnagram("a","b"));
+let arr =[1,2,3];
+console.log(arr.toString())

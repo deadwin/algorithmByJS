@@ -29,3 +29,5 @@ function isAnagram(s, t) {
 }
 ;
 console.log(isAnagram("a", "b"));
+let arr = [1, 2, 3];
+console.log(arr.toString());
