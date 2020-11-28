@@ -1,3 +1,7 @@
+/**剑指 Offer 55 - II. 平衡二叉树
+ * 2020年11月28日
+ * 需要复习
+ */
 /**
  * Definition for a binary tree node.
  * class TreeNode {
@@ -11,12 +15,4 @@
  *     }
  * }
  */
-
-import { TreeNode } from "../problems/isSameTree";
-
-function maxDepth(root: TreeNode | null): number {
-    if(!root) return 0;
-    let leftD = maxDepth(root.left) + 1;
-    let rigthD = maxDepth(root.right) + 1;
-    return rigthD > leftD ? rigthD : leftD;
-};
+export {};

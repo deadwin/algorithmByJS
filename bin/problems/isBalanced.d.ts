@@ -1,4 +1,7 @@
 /**
+ *
+ */
+/**
  * Definition for a binary tree node.
  * class TreeNode {
  *     val: number
@@ -11,12 +14,4 @@
  *     }
  * }
  */
-
-import { TreeNode } from "../problems/isSameTree";
-
-function maxDepth(root: TreeNode | null): number {
-    if(!root) return 0;
-    let leftD = maxDepth(root.left) + 1;
-    let rigthD = maxDepth(root.right) + 1;
-    return rigthD > leftD ? rigthD : leftD;
-};
+export {};
