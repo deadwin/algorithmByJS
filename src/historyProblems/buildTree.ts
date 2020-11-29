@@ -15,7 +15,7 @@
  * }
  */
 
-import { TreeNode } from "./isSameTree";
+import { TreeNode } from "../problems/isSameTree";
 
 /**
  * @param {number[]} preorder

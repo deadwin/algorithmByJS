@@ -16,7 +16,7 @@
  * }
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-const isSameTree_1 = require("./isSameTree");
+const isSameTree_1 = require("../problems/isSameTree");
 /**
  * @param {number[]} preorder
  * @param {number[]} inorder
