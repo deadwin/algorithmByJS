@@ -1,0 +1,40 @@
+class MaxQueue {
+    constructor() {
+        this.arr = [];
+        this._max = -Infinity;
+    }
+    max_value() {
+        if (this.arr.length > 0) {
+            return this._max;
+        }
+        return -1;
+    }
+    push_back(value) {
+        if (value > this._max) {
+            this._max = value;
+        }
+        this.arr.push(value);
+    }
+    pop_front() {
+        if (this.arr.length < 1) {
+            return -1;
+        }
+        let value = this.arr.shift();
+        if (value == this._max) {
+            this._max = -Infinity;
+            this.arr.forEach((v) => {
+                if (v > this._max) {
+                    this._max = v;
+                }
+            });
+        }
+        return value;
+    }
+}
+/**
+ * Your MaxQueue object will be instantiated and called as such:
+ * var obj = new MaxQueue()
+ * var param_1 = obj.max_value()
+ * obj.push_back(value)
+ * var param_3 = obj.pop_front()
+ */ 
