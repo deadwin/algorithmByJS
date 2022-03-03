@@ -5,6 +5,7 @@
  * [5] 最长回文子串
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.longestPalindrome = void 0;
 // let str = "civilwartestingwhetherthatnaptionoranynartionsoco\
 // nceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometo\
 // dedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatn\

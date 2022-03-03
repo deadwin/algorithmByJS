@@ -1,11 +1,12 @@
 "use strict";
 // //279. 完全平方数
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.numSquares = void 0;
 // /**
 //  * @param {number} n
 //  * @return {number}
 //  */
-exports.numSquares = function (n) {
+var numSquares = function (n) {
     let que = [n];
     let visited = new Set();
     let depth = 0;
@@ -28,3 +29,4 @@ exports.numSquares = function (n) {
     }
     return depth;
 };
+exports.numSquares = numSquares;

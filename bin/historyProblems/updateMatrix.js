@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.updateMatrix = void 0;
 //542. 01 矩阵
 /**
  * @param {number[][]} matrix
  * @return {number[][]}
  */
-exports.updateMatrix = function (matrix) {
+var updateMatrix = function (matrix) {
     let result = [];
     for (let i = 0; i < matrix.length; i++) {
         for (let j = 0; j < matrix[i].length; j++) {
@@ -64,3 +65,4 @@ exports.updateMatrix = function (matrix) {
     }
     return result;
 };
+exports.updateMatrix = updateMatrix;

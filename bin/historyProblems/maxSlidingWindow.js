@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.maxSlidingWindow = void 0;
 /**剑指 Offer 59 - I. 滑动窗口的最大值
  * 2020年10月12日
  * @param {number[]} nums
  * @param {number} k
  * @return {number[]}
  */
-exports.maxSlidingWindow = function (nums, k) {
+var maxSlidingWindow = function (nums, k) {
     //解法2 使用单调队列
     if (!nums || nums.length == 0)
         return [];
@@ -57,3 +58,4 @@ exports.maxSlidingWindow = function (nums, k) {
     // }
     // return ansArr;
 };
+exports.maxSlidingWindow = maxSlidingWindow;

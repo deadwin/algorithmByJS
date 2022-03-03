@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.coinChange = void 0;
 /**322. 零钱兑换
  * @param {number[]} coins
  * @param {number} amount
  * @return {number}
  */
-exports.coinChange = function (coins, amount) {
+var coinChange = function (coins, amount) {
     let dp = new Array(amount + 1);
     dp[0] = 0;
     for (let i = 1; i < dp.length; i++) {
@@ -20,3 +21,4 @@ exports.coinChange = function (coins, amount) {
     }
     return dp[amount] == amount + 1 ? -1 : dp[amount];
 };
+exports.coinChange = coinChange;

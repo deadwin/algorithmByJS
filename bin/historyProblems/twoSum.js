@@ -9,7 +9,8 @@
  * @return {number[]}
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.twoSum = function (numbers, target) {
+exports.twoSum = void 0;
+var twoSum = function (numbers, target) {
     for (let i = 0; i < numbers.length - 1; i++) {
         let num1 = numbers[i];
         let temp = target - num1;
@@ -26,3 +27,4 @@ exports.twoSum = function (numbers, target) {
         }
     }
 };
+exports.twoSum = twoSum;

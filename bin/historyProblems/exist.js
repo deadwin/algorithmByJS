@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.exist = void 0;
 /**剑指 Offer 12. 矩阵中的路径
  * 2020年11月5日
  * @param board

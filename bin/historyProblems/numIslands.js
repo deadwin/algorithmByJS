@@ -1,12 +1,13 @@
 "use strict";
 //200. 岛屿数量
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.numIslandsDFS = exports.numIslands = void 0;
 //广度优先解法，BFS
 /**
  * @param {character[][]} grid
  * @return {number}
  */
-exports.numIslands = function (grid) {
+var numIslands = function (grid) {
     var result = 0;
     for (var i = 0; i < grid.length; i++) {
         for (var j = 0; j < grid[i].length; j++) {
@@ -41,6 +42,7 @@ exports.numIslands = function (grid) {
     }
     return result;
 };
+exports.numIslands = numIslands;
 var helper = function (grid, i, j, rows, cols) {
     if (i < 0 || j < 0 || i > rows - 1 || j > cols - 1 || grid[i][j] === '0') {
         return;
@@ -56,7 +58,7 @@ var helper = function (grid, i, j, rows, cols) {
  * @param {character[][]} grid
  * @return {number}
  */
-exports.numIslandsDFS = function (grid) {
+var numIslandsDFS = function (grid) {
     let res = 0;
     const rows = grid.length;
     if (rows === 0)
@@ -72,3 +74,4 @@ exports.numIslandsDFS = function (grid) {
     }
     return res;
 };
+exports.numIslandsDFS = numIslandsDFS;

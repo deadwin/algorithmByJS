@@ -1,6 +1,7 @@
 "use strict";
 /**733 图像渲染 */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.floodFill = void 0;
 /**
  * @param {number[][]} image
  * @param {number} sr
@@ -8,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param {number} newColor
  * @return {number[][]}
  */
-exports.floodFill = function (image, sr, sc, newColor) {
+var floodFill = function (image, sr, sc, newColor) {
     let curClr = image[sr][sc];
     if (curClr == newColor) {
         return image;
@@ -43,3 +44,4 @@ exports.floodFill = function (image, sr, sc, newColor) {
     }
     return image;
 };
+exports.floodFill = floodFill;

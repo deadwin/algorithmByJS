@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.reverseWords_3 = void 0;
 /**557. 反转字符串中的单词 III
  * 2020年8月23日
  * @param {string} s
  * @return {string}
  */
-exports.reverseWords_3 = function (s) {
+var reverseWords_3 = function (s) {
     if (!s || s.length == 0)
         return "";
     let ans = "";
@@ -27,3 +28,4 @@ exports.reverseWords_3 = function (s) {
     }
     return ans;
 };
+exports.reverseWords_3 = reverseWords_3;

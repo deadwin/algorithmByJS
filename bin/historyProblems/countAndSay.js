@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.countAndSay = void 0;
 /**38. 外观数列
  * 2020年8月29日
  * @param {number} n
  * @return {string}
  */
-exports.countAndSay = function (n) {
+var countAndSay = function (n) {
     /**
      *
      * 解法1：暴力使用数学运算，当结果超过2^53时，会丢失精度，通不过testcase
@@ -82,3 +83,4 @@ exports.countAndSay = function (n) {
     return ans.toString().split(",").join("");
     //21
 };
+exports.countAndSay = countAndSay;

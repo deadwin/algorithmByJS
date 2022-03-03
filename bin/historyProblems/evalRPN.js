@@ -1,11 +1,12 @@
 "use strict";
 //150. 逆波兰表达式求值
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.evalRPN = void 0;
 /**
  * @param {string[]} tokens
  * @return {number}
  */
-exports.evalRPN = function (tokens) {
+var evalRPN = function (tokens) {
     if (tokens.length == 0) {
         return 0;
     }
@@ -43,3 +44,4 @@ exports.evalRPN = function (tokens) {
     // console.log(lastNum,"lastNum")
     return lastNum;
 };
+exports.evalRPN = evalRPN;

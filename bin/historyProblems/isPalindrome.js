@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.isPalindrome = void 0;
 /**125. 验证回文串
  * 2020年8月27日
  * @param {string} s
  * @return {boolean}
  */
-exports.isPalindrome = function (s) {
+var isPalindrome = function (s) {
     s = s.replace(/[^0-9a-zA-Z]/g, "").toLowerCase();
     let i = 0;
     let j = s.length - i - 1;
@@ -17,3 +18,4 @@ exports.isPalindrome = function (s) {
     }
     return true;
 };
+exports.isPalindrome = isPalindrome;

@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getRow = void 0;
 /**119. 杨辉三角 II
  * 2020年8月23日
  * @param {number} rowIndex
  * @return {number[]}
  */
-exports.getRow = function (rowIndex) {
+var getRow = function (rowIndex) {
     let len = rowIndex + 1;
     let dp = new Array(len);
     for (let i = 0; i < len; i++) {
@@ -16,6 +17,7 @@ exports.getRow = function (rowIndex) {
     }
     return dp;
 };
+exports.getRow = getRow;
 //     1 4 6 4 1           5
 //    1 5 10 10 5 1        6    (+5)
 //   1 6 15 20 15  6  1      7   (+9,+5)

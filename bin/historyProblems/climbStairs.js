@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.climbStairs = void 0;
 /**70. 爬楼梯
  * 2020年9月23日复习
  * @param {number} n
  * @return {number}
  */
-exports.climbStairs = function (n) {
+var climbStairs = function (n) {
     // let dp0 = 1;
     // let dp1 = 2;
     // let dpArr = new Array<number>(n + 1);
@@ -27,3 +28,4 @@ exports.climbStairs = function (n) {
     }
     return arr[n];
 };
+exports.climbStairs = climbStairs;

@@ -1,12 +1,13 @@
 "use strict";
 //20. 有效的括号
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValid = void 0;
 //我的烂解 2020年3月26日
 /**
  * @param {string} s
  * @return {boolean}
  */
-exports.isValid = function (s) {
+var isValid = function (s) {
     if (s.length == 0) {
         return true;
     }
@@ -40,3 +41,4 @@ exports.isValid = function (s) {
     }
     return stack.length == 0;
 };
+exports.isValid = isValid;

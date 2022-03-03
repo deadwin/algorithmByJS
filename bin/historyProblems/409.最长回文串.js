@@ -5,8 +5,9 @@
  * [409] 最长回文串
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.longestPalindrome = void 0;
 // @lc code=start
-exports.longestPalindrome = function (s) {
+var longestPalindrome = function (s) {
     let obj = {};
     let len = s.length;
     let arr = [];
@@ -29,4 +30,5 @@ exports.longestPalindrome = function (s) {
     }
     return ans;
 };
+exports.longestPalindrome = longestPalindrome;
 // @lc code=end

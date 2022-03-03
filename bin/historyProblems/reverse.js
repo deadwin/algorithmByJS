@@ -1,10 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.reverse = void 0;
 /**7. 整数反转
  * @param {number} x
  * @return {number}
  */
-exports.reverse = function (x) {
+var reverse = function (x) {
     let symbol = false;
     if (x < 0) {
         symbol = true;
@@ -27,3 +28,4 @@ exports.reverse = function (x) {
     }
     return symbol ? -ans : ans;
 };
+exports.reverse = reverse;

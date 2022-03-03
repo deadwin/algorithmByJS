@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.strStr = void 0;
 var buildNext = (p) => {
     let m = p.length;
     let j = 0;
@@ -23,7 +24,7 @@ var buildNext = (p) => {
  * @param {string} needle
  * @return {number}
  */
-exports.strStr = function (haystack, needle) {
+var strStr = function (haystack, needle) {
     if (needle.length == 0)
         return 0;
     if (needle.length > haystack.length)
@@ -45,3 +46,4 @@ exports.strStr = function (haystack, needle) {
     }
     return i - j;
 };
+exports.strStr = strStr;

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.isSubStructure = void 0;
 /**剑指 Offer 26. 树的子结构
  * 2020年11月14日 11点47分  12点09分
  * Definition for a binary tree node.

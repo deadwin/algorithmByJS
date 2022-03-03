@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.nthUglyNumber = void 0;
 /**264. 丑数 II  / 剑指 Offer 49. 丑数
  * 2020年11月4日
  * 参考了答案

@@ -10,12 +10,13 @@
  * }
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.removeNthFromEnd = void 0;
 /**
  * @param {ListNode} head
  * @param {number} n
  * @return {ListNode}
  */
-exports.removeNthFromEnd = function (head, n) {
+var removeNthFromEnd = function (head, n) {
     let len = 0;
     let left = head;
     let right = head;
@@ -36,3 +37,4 @@ exports.removeNthFromEnd = function (head, n) {
     }
     return head;
 };
+exports.removeNthFromEnd = removeNthFromEnd;

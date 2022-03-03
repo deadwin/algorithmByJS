@@ -10,6 +10,7 @@
 // console.log(cq.deleteHead());
 // cq.appendTail(4);
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CQueue = void 0;
 // console.log(cq.deleteHead());
 // console.log(cq.deleteHead());
 // console.log(cq.deleteHead());

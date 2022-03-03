@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.massage = void 0;
 /**面试题 17.16. 按摩师
  * @param {number[]} nums
  * @return {number}

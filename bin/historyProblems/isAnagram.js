@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.isAnagram = void 0;
 /**242. 有效的字母异位词
  * 2020年8月27日
  * @param {string} s
  * @param {string} t
  * @return {boolean}
  */
-exports.isAnagram = function (s, t) {
+var isAnagram = function (s, t) {
     if (s.length != t.length)
         return false;
     let map = new Map();
@@ -34,3 +35,4 @@ exports.isAnagram = function (s, t) {
     }
     return true;
 };
+exports.isAnagram = isAnagram;

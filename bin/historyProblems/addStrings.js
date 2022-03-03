@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.addStrings = void 0;
 /**415. 字符串相加
  * @param {string} num1
  * @param {string} num2
  * @return {string}
  */
-exports.addStrings = function (num1, num2) {
+var addStrings = function (num1, num2) {
     let len1 = num1.length;
     let len2 = num2.length;
     let index = 0;
@@ -42,6 +43,7 @@ exports.addStrings = function (num1, num2) {
     }
     return ans.split("").reverse().join("");
 };
+exports.addStrings = addStrings;
 "6";
 "456";
 //6  4,     

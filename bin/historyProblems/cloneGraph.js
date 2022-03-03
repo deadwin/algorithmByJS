@@ -2,6 +2,7 @@
 //133. 克隆图
 //当前题目存在一定提交疑惑
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.cloneGraph = exports.GraphNode = void 0;
 /**
  * // Definition for a Node.
  * function Node(val, neighbors) {
@@ -21,7 +22,7 @@ exports.GraphNode = GraphNode;
  * @param {GraphNode} node
  * @return {GraphNode}
  */
-exports.cloneGraph = function (node) {
+var cloneGraph = function (node) {
     let visited = new Map();
     const dfs = (node) => {
         if (!node) {
@@ -45,6 +46,7 @@ exports.cloneGraph = function (node) {
     };
     return dfs(node);
 };
+exports.cloneGraph = cloneGraph;
 // let createGraphNode = function(value):GraphNode{
 //     let item = new GraphNode(value,[]);
 //     return item;

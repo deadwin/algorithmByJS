@@ -1,10 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.connect = void 0;
 /**
  * @param {Node} root
  * @return {Node}
  */
-exports.connect = function (root) {
+var connect = function (root) {
     if (!root)
         return root;
     let arr = [];
@@ -33,3 +34,4 @@ exports.connect = function (root) {
     }
     return root;
 };
+exports.connect = connect;

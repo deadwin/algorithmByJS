@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.countPrimes = void 0;
 /**204. 计数质数
  * 2020年9月25日
  *

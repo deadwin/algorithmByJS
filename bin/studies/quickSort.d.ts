@@ -3,4 +3,4 @@
  * 快速排序
  * @param arr
  */
-export declare var quickSort: (arr: number[]) => void;
+export declare var quickSort: (arr: Array<number>) => void;

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.validMountainArray = void 0;
 /**941. 有效的山脉数组
  * 2020年11月3日
  * @param A

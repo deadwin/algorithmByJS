@@ -6,6 +6,7 @@
  * [973] 最接近原点的 K 个点
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.kClosest = void 0;
 function distance(point) {
     return point[0] * point[0] + point[1] * point[1];
 }

@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.myAtoi = void 0;
 /**8. 字符串转换整数 (atoi)
  * 2020年8月28日
  * @param {string} str
  * @return {number}
  */
-exports.myAtoi = function (str) {
+var myAtoi = function (str) {
     //TODO 官方推荐自动机写法
     //解法2，暴力遍历法，自写
     let ans = null;
@@ -59,3 +60,4 @@ exports.myAtoi = function (str) {
     }
     return symbol == "-" ? -ans : ans;
 };
+exports.myAtoi = myAtoi;

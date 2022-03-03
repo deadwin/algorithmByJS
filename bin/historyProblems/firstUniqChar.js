@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.firstUniqChar_2 = exports.firstUniqChar = void 0;
 /**387. 字符串中的第一个唯一字符，同剑指 Offer 50
  * 2020年8月26日
  * @param {string} s
  * @return {number}
  */
-exports.firstUniqChar = function (s) {
+var firstUniqChar = function (s) {
     let map = new Map();
     let ans = -1;
     for (let i = 0; i < s.length; i++) {
@@ -27,12 +28,13 @@ exports.firstUniqChar = function (s) {
     }
     return ans;
 };
+exports.firstUniqChar = firstUniqChar;
 //剑指 Offer 50. 第一个只出现一次的字符，同387
 /**2020年8月27日
  * @param {string} s
  * @return {character}
  */
-exports.firstUniqChar_2 = function (s) {
+var firstUniqChar_2 = function (s) {
     let map = new Map();
     let ans = " ";
     for (let i = 0; i < s.length; i++) {
@@ -53,3 +55,4 @@ exports.firstUniqChar_2 = function (s) {
     }
     return ans;
 };
+exports.firstUniqChar_2 = firstUniqChar_2;

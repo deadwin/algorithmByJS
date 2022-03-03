@@ -4,6 +4,7 @@
  * @param strs strs
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.longestCommonPrefix = void 0;
 function longestCommonPrefix(strs) {
     if (strs.length == 0) {
         return "";

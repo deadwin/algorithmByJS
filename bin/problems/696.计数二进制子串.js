@@ -5,6 +5,7 @@
  * [696] 计数二进制子串
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.countBinarySubstrings = void 0;
 // @lc code=start
 function countBinarySubstrings(s) {
     if (s.length <= 1)

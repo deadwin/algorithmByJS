@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.merge = void 0;
 /**56. 合并区间 */
 function merge(intervals) {
     intervals.sort((a, b) => a[0] - b[0]);

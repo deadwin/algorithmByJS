@@ -8,12 +8,13 @@
  * }
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.sortedArrayToBST = void 0;
 const isSameTree_1 = require("../problems/isSameTree");
 /**
  * @param {number[]} nums
  * @return {TreeNode}
  */
-exports.sortedArrayToBST = function (nums) {
+var sortedArrayToBST = function (nums) {
     function bfs(nums, start, end) {
         if (start > end)
             return null;
@@ -26,3 +27,4 @@ exports.sortedArrayToBST = function (nums) {
     }
     return bfs(nums, 0, nums.length - 1);
 };
+exports.sortedArrayToBST = sortedArrayToBST;

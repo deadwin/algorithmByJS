@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Solution_384 = void 0;
 /**
  * 384. 打乱数组
  * 2020年9月25日

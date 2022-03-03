@@ -16,6 +16,7 @@
  * }
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.pathSum = void 0;
 function pathSum(root, sum) {
     if (root === null)
         return [];

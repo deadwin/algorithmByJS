@@ -11,6 +11,7 @@
  * @param arr2
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.relativeSortArray = void 0;
 function relativeSortArray(arr1, arr2) {
     let map = new Map();
     for (let i = 0; i < arr2.length; i++) {

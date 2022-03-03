@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.mergeTwoLists = void 0;
 /**21. 合并两个有序链表
  * 2020年9月18日
  * Definition for singly-linked list.
@@ -13,7 +14,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param {ListNode} l2
  * @return {ListNode}
  */
-exports.mergeTwoLists = function (l1, l2) {
+var mergeTwoLists = function (l1, l2) {
     if (!l1) {
         return l2;
     }
@@ -46,3 +47,4 @@ exports.mergeTwoLists = function (l1, l2) {
     flagList.next = left1 ? left1 : left2;
     return ansList;
 };
+exports.mergeTwoLists = mergeTwoLists;

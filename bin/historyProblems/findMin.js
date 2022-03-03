@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.findMin = void 0;
 /**153. 寻找旋转排序数组中的最小值
  * 2020年8月23日
  *
@@ -23,7 +24,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param {number[]} nums
  * @return {number}
  */
-exports.findMin = function (nums) {
+var findMin = function (nums) {
     let left = 0;
     let right = nums.length - 1;
     while (left < right) {
@@ -49,3 +50,4 @@ exports.findMin = function (nums) {
     }
     return nums[left];
 };
+exports.findMin = findMin;

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.fizzBuzz = void 0;
 /**412. Fizz Buzz
  * 2020年9月25日
  * TODO 存在另外几种更好的解题方式

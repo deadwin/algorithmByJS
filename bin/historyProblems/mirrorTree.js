@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.mirrorTree = void 0;
 function mirrorTree(root) {
     if (!root)
         return root;

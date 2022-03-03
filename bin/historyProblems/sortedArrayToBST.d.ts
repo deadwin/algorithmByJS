@@ -11,4 +11,4 @@ import { TreeNode } from "../problems/isSameTree";
  * @param {number[]} nums
  * @return {TreeNode}
  */
-export declare var sortedArrayToBST: (nums: number[]) => TreeNode;
+export declare var sortedArrayToBST: (nums: Array<number>) => TreeNode;

@@ -13,6 +13,7 @@
  * }
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.reversePrint = void 0;
 function reversePrint(head) {
     if (head == null)
         return [];

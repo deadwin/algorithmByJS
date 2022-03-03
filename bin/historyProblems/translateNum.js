@@ -4,6 +4,7 @@
  * @param num
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.translateNum = void 0;
 function translateNum(num) {
     //f(0) = 0
     //f(1) = 1

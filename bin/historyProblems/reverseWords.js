@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.reverseWords = void 0;
 /**151. 翻转字符串里的单词
  * 2020年8月15日
  * @param {string} s
  * @return {string}
  */
-exports.reverseWords = function (s) {
+var reverseWords = function (s) {
     let ans = "";
     let index = 0;
     let curWord = "";
@@ -34,3 +35,4 @@ exports.reverseWords = function (s) {
     }
     return ans;
 };
+exports.reverseWords = reverseWords;

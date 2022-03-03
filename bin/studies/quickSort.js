@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.quickSort = void 0;
 /**2020年9月21日
  * 一个未优化的快速排序
  * 快速排序
  * @param arr
  */
-exports.quickSort = function (arr) {
+var quickSort = function (arr) {
     let swap = function (arr, a, b) {
         let temp = arr[a];
         arr[a] = arr[b];
@@ -38,3 +39,4 @@ exports.quickSort = function (arr) {
     };
     qSort(arr, 0, arr.length - 1);
 };
+exports.quickSort = quickSort;

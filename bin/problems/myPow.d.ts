@@ -3,4 +3,4 @@
  * @param {number} n
  * @return {number}
  */
-declare var myPow: (x: number, n: number) => number;
+export declare var myPow: (x: number, n: number) => number;

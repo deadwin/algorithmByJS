@@ -6,6 +6,7 @@
  * @param k
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.movingCount = void 0;
 function movingCount(m, n, k) {
     function getSum(num) {
         let answer = 0;

@@ -4,6 +4,7 @@
  * 居然写出了官方解法！
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.addTwoNumbers = void 0;
 class ListNode {
     constructor(val, next) {
         this.val = (val === undefined ? 0 : val);

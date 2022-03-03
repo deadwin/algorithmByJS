@@ -1,6 +1,7 @@
 "use strict";
 //35. 搜索插入位置
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.searchInsert = void 0;
 function searchInsert(nums, target) {
     if (target < nums[0]) {
         return 0;

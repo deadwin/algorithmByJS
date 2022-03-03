@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.fourSum = void 0;
 /**18. 四数之和
  * 2020年10月6日
  * @param {number[]} nums
  * @param {number} target
  * @return {number[][]}
  */
-exports.fourSum = function (nums, target) {
+var fourSum = function (nums, target) {
     let ansArr = [];
     for (let i = 0; i < nums.length - 3; i++) {
         let _a = nums[i];
@@ -45,3 +46,4 @@ exports.fourSum = function (nums, target) {
     }
     return ansArr;
 };
+exports.fourSum = fourSum;

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.isPowerOfThree = void 0;
 /**326. 3的幂
  * 2020年9月26日
  *

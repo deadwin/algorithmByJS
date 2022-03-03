@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.canVisitAllRooms = void 0;
 //841. 钥匙和房间
 function canVisitAllRooms(rooms) {
     if (!rooms) {

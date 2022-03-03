@@ -5,6 +5,7 @@
  * @param val
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.removeElement = void 0;
 function removeElement(nums, val) {
     //解法1，本题推荐解法
     let len = nums.length;

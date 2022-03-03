@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.openLock = void 0;
 //752. 打开转盘锁
 /**
  * @param {string[]} deadends
  * @param {string} target
  * @return {number}
  */
-exports.openLock = function (deadends, target) {
+var openLock = function (deadends, target) {
     //注意ES5不支持Set、Map等ES6中新增的数据结构。
     let deadSet = new Set(deadends);
     // console.log("初始：",deadSet,target)
@@ -48,3 +49,4 @@ exports.openLock = function (deadends, target) {
     }
     return -1;
 };
+exports.openLock = openLock;

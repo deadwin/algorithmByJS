@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.oddEvenList = void 0;
 /**328. 奇偶链表
  * 2020年11月14日
   Definition for singly-linked list.

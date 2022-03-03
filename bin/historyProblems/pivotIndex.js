@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.pivotIndex = void 0;
 //724. 寻找数组的中心索引
 function pivotIndex(nums) {
     let sum = 0;

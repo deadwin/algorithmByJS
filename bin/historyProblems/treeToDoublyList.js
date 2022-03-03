@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.treeToDoublyList = void 0;
 /**剑指 Offer 36. 二叉搜索树与双向链表
  * 2020年11月16日
  * 思路：实际上用了递归中序遍历
@@ -27,7 +28,7 @@ node.right.right.val = 5;
  *
  * @param root
  */
-exports.treeToDoublyList = function (root) {
+var treeToDoublyList = function (root) {
     if (!root)
         return root;
     let flag = null;
@@ -58,3 +59,4 @@ exports.treeToDoublyList = function (root) {
     head = head.right;
     return head;
 };
+exports.treeToDoublyList = treeToDoublyList;

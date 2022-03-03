@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.arrayPairSum = void 0;
 /**
  * 561. 数组拆分 I
  * 2020年8月18日
@@ -8,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param {number[]} nums
  * @return {number}
  */
-exports.arrayPairSum = function (nums) {
+var arrayPairSum = function (nums) {
     nums.sort((a, b) => a - b);
     console.log(nums);
     let sum = 0;
@@ -17,3 +18,4 @@ exports.arrayPairSum = function (nums) {
     }
     return sum;
 };
+exports.arrayPairSum = arrayPairSum;

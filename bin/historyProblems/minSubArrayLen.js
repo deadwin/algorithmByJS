@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.minSubArrayLen = void 0;
 /**209. 长度最小的子数组
  * @param {number} s
  * @param {number[]} nums
  * @return {number}
  */
-exports.minSubArrayLen = function (s, nums) {
+var minSubArrayLen = function (s, nums) {
     let start = 0;
     let end = 0;
     let sum = 0;
@@ -25,3 +26,4 @@ exports.minSubArrayLen = function (s, nums) {
     }
     return ans == nums.length + 1 ? 0 : ans;
 };
+exports.minSubArrayLen = minSubArrayLen;
