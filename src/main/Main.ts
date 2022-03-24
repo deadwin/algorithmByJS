@@ -1,3 +1,3 @@
-import { generateParenthesis } from "../problems/generateParenthesis";
+import { generateParenthesis } from "../historyProblems/generateParenthesis";
 
-generateParenthesis(5.2);
+generateParenthesis(6);

@@ -1,6 +1,6 @@
 /**22. 括号生成 2022年3月25日
  * 
- * 一遍过hh
+ * 一遍过hh,添加了解法2，剪枝操作
  * @param n  1 <= n <= 8
  * @returns 
  */
@@ -9,29 +9,26 @@ export function generateParenthesis(n: number): string[] {
         console.log("err");
         return [];
     }
-    let ansArr = [];
-    function t(a: string, curNum: number, needRightNum: number) {
-        // console.log(a, curNum, needRightNum);
-        if (curNum < n) {
-            if (curNum > needRightNum) {
-                let c = a + "(";
-                let b = a + ")";
-                t(c, curNum + 1, needRightNum);
-                t(b, curNum, needRightNum + 1);
-            } else {
-                a += "(";
-                t(a, curNum + 1, needRightNum);
-            }
-        } else {
-            while (needRightNum < curNum) {
-                a += ")";
-                needRightNum += 1;
-            }
-            ansArr.push(a);
+    let set = [];
+    function generate(t: number): string[] {
+        // count++;
+        if (set[t]) return set[t];
+        let ans: string[] = [];
+        if (t == 0) {
+            ans.push("");
         }
-
+        for (let i = 0; i < t; i++) {
+            let temp = generate(i);
+            for (let j = 0; j < temp.length; j++) {
+                let left = temp[j];
+                let rightTemp = generate(t - 1 - i);
+                for (let k = 0; k < rightTemp.length; k++) {
+                    ans.push("(" + left + ")" + rightTemp[k]);
+                }
+            }
+        }
+        set[t] = ans;
+        return ans;
     }
-    t("", 0, 0);
-    // console.log(ansArr);
-    return ansArr;
+    return generate(n);
 };
