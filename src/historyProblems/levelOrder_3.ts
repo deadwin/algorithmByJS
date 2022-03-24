@@ -16,33 +16,33 @@
  * }
  */
 
-import { TreeNode } from "../problems/isSameTree";
+import { TreeNode } from "../problems/TreeNode";
 
 export function levelOrder_3(root: TreeNode | null): number[][] {
     let ansArr = [];
-    if(!root) return ansArr;
-    
+    if (!root) return ansArr;
+
     let nodeArr = [];
     nodeArr.push(root);
     let size = nodeArr.length;
-    let node:TreeNode;
+    let node: TreeNode;
     let tempArr = [];
     let isJi = true;
-    while(nodeArr.length > 0){
+    while (nodeArr.length > 0) {
         node = nodeArr.shift();
         tempArr.push(node.val);
-        if(node.left){
+        if (node.left) {
             nodeArr.push(node.left);
         }
-        if(node.right){
+        if (node.right) {
             nodeArr.push(node.right);
         }
-        size --;
-        if(size === 0){
+        size--;
+        if (size === 0) {
             size = nodeArr.length;
-            if(isJi){
+            if (isJi) {
                 ansArr.push(tempArr);
-            }else{
+            } else {
                 ansArr.push(tempArr.reverse());
             }
             isJi = !isJi;

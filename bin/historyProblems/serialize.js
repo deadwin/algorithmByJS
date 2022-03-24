@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  *     this.left = this.right = null;
  * }
  */
-const isSameTree_1 = require("../problems/isSameTree");
+const TreeNode_1 = require("../problems/TreeNode");
 /**
  * Encodes a tree to a single string.
  *
@@ -40,7 +40,7 @@ var deserialize = function (data) {
         if (data == "null") {
             return null;
         }
-        let node = new isSameTree_1.TreeNode();
+        let node = new TreeNode_1.TreeNode();
         node.val = data;
         node.left = preList(list);
         node.right = preList(list);

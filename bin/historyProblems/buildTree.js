@@ -16,7 +16,7 @@
  * }
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-const isSameTree_1 = require("../problems/isSameTree");
+const TreeNode_1 = require("../problems/TreeNode");
 /**
  * @param {number[]} preorder
  * @param {number[]} inorder
@@ -25,7 +25,7 @@ const isSameTree_1 = require("../problems/isSameTree");
 var buildTree = function (preorder, inorder) {
     if (!preorder || preorder.length == 0)
         return null;
-    let treeNode = new isSameTree_1.TreeNode();
+    let treeNode = new TreeNode_1.TreeNode();
     treeNode.val = preorder[0];
     for (let i = 0; i < preorder.length; i++) {
         if (preorder[0] == inorder[i]) {

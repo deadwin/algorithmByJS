@@ -16,20 +16,20 @@
  * }
  */
 
-import { TreeNode } from "../problems/isSameTree";
+import { TreeNode } from "../problems/TreeNode";
 
 function kthLargest(root: TreeNode | null, k: number): number {
-    if(!root) return null;
+    if (!root) return null;
     let ans = null;
-    function dfs(node:TreeNode | null){
-        if(node.right){
+    function dfs(node: TreeNode | null) {
+        if (node.right) {
             dfs(node.right);
         }
-        k --;
-        if(k == 0){
+        k--;
+        if (k == 0) {
             ans = node.val;
         }
-        if(node.left){
+        if (node.left) {
             dfs(node.left);
         }
     }

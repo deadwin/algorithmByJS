@@ -7,21 +7,22 @@
  * }
  */
 
-import { TreeNode } from "../problems/isSameTree";
+import { TreeNode } from "../problems/TreeNode";
+
 
 /**
  * @param {number[]} nums
  * @return {TreeNode}
  */
-export var sortedArrayToBST = function(nums:Array<number>):TreeNode {
-    function bfs(nums:Array<number>,start:number,end:number):TreeNode{
-        if(start >  end) return null;
-        let mid = Math.floor((start + end) / 2); 
+export var sortedArrayToBST = function (nums: Array<number>): TreeNode {
+    function bfs(nums: Array<number>, start: number, end: number): TreeNode {
+        if (start > end) return null;
+        let mid = Math.floor((start + end) / 2);
         let node = new TreeNode();
         node.val = nums[mid];
-        node.left = bfs(nums,start,mid - 1);
-        node.right = bfs(nums,mid + 1,end);
+        node.left = bfs(nums, start, mid - 1);
+        node.right = bfs(nums, mid + 1, end);
         return node;
     }
-    return bfs(nums,0,nums.length - 1);
+    return bfs(nums, 0, nums.length - 1);
 };

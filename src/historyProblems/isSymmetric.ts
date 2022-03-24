@@ -13,17 +13,17 @@
  * }
  */
 
-import { TreeNode } from "../problems/isSameTree";
+import { TreeNode } from "../problems/TreeNode";
 
 function isSymmetric(root: TreeNode | null): boolean {
-    if(!root) return true;
-    let func = function(leftNode:TreeNode,rightNode:TreeNode){
-        if(!leftNode && !rightNode) return true;
-        if(!leftNode || !rightNode) return false;
-        if(leftNode.val != rightNode.val){
+    if (!root) return true;
+    let func = function (leftNode: TreeNode, rightNode: TreeNode) {
+        if (!leftNode && !rightNode) return true;
+        if (!leftNode || !rightNode) return false;
+        if (leftNode.val != rightNode.val) {
             return false;
         }
-        return func(leftNode.left,rightNode.right) && func(leftNode.right,rightNode.left);
+        return func(leftNode.left, rightNode.right) && func(leftNode.right, rightNode.left);
     }
-    return func(root.left,root.right);
+    return func(root.left, root.right);
 };

@@ -1,8 +1,5 @@
-/**剑指 Offer 55 - II. 平衡二叉树
- * 2020年11月28日
- * 需要复习
- */
-/**
+/**100. 相同的树  2022年3月25日
+ * @see https://leetcode-cn.com/problems/same-tree/
  * Definition for a binary tree node.
  * class TreeNode {
  *     val: number
@@ -15,18 +12,13 @@
  *     }
  * }
  */
-
 import { TreeNode } from "../problems/TreeNode";
 
-
-function isBalanced(root: TreeNode | null): boolean {
-    if (!root) return true;
-    let left = dfs(root.left);
-    let right = dfs(root.right);
-    if (Math.abs(left - right) > 1) return false;
-    return isBalanced(root.left) && isBalanced(root.right);
+function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
+    if (!p && !q) return true;
+    if (p && q) {
+        return p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+    } else {
+        return false;
+    }
 };
-function dfs(node) {
-    if (!node) return 0;
-    return Math.max(dfs(node.left), dfs(node.right)) + 1;
-}

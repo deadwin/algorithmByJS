@@ -9,7 +9,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sortedArrayToBST = void 0;
-const isSameTree_1 = require("../problems/isSameTree");
+const TreeNode_1 = require("../problems/TreeNode");
 /**
  * @param {number[]} nums
  * @return {TreeNode}
@@ -19,7 +19,7 @@ var sortedArrayToBST = function (nums) {
         if (start > end)
             return null;
         let mid = Math.floor((start + end) / 2);
-        let node = new isSameTree_1.TreeNode();
+        let node = new TreeNode_1.TreeNode();
         node.val = nums[mid];
         node.left = bfs(nums, start, mid - 1);
         node.right = bfs(nums, mid + 1, end);

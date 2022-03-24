@@ -15,21 +15,22 @@
  * }
  */
 
-import { TreeNode } from "../problems/isSameTree";
+import { TreeNode } from "../problems/TreeNode";
+
 
 /**
  * @param {number[]} preorder
  * @param {number[]} inorder
  * @return {TreeNode}
  */
-var buildTree = function(preorder, inorder) {
-    if(!preorder || preorder.length == 0) return null;
+var buildTree = function (preorder, inorder) {
+    if (!preorder || preorder.length == 0) return null;
     let treeNode = new TreeNode();
     treeNode.val = preorder[0];
-    for(let i = 0;i < preorder.length;i ++){
-        if(preorder[0] == inorder[i]){
-            treeNode.left = buildTree(preorder.slice(1,i + 1),inorder.slice(0,i));
-            treeNode.right = buildTree(preorder.slice(i + 1),inorder.slice(i + 1));
+    for (let i = 0; i < preorder.length; i++) {
+        if (preorder[0] == inorder[i]) {
+            treeNode.left = buildTree(preorder.slice(1, i + 1), inorder.slice(0, i));
+            treeNode.right = buildTree(preorder.slice(i + 1), inorder.slice(i + 1));
         }
     }
     return treeNode;

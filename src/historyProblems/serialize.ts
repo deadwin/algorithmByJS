@@ -11,7 +11,7 @@
  * }
  */
 
-import { TreeNode } from "../problems/isSameTree";
+import { TreeNode } from "../problems/TreeNode";
 
 /**
  * Encodes a tree to a single string.
@@ -19,13 +19,13 @@ import { TreeNode } from "../problems/isSameTree";
  * @param {TreeNode} root
  * @return {string}
  */
-var serialize = function(root:TreeNode):string {
-    if(root == null){
+var serialize = function (root: TreeNode): string {
+    if (root == null) {
         return "null";
     }
     let left = serialize(root.left);
     let right = serialize(root.right);
-    return root.val + "," + left + "," + right; 
+    return root.val + "," + left + "," + right;
 };
 
 /**
@@ -34,23 +34,23 @@ var serialize = function(root:TreeNode):string {
  * @param {string} data
  * @return {TreeNode}
  */
-var deserialize = function(data:string):TreeNode| null{
-// let arr =JSON.parse(data);
-let arr = data.split(',');   // split成数组
+var deserialize = function (data: string): TreeNode | null {
+    // let arr =JSON.parse(data);
+    let arr = data.split(',');   // split成数组
 
-    let preList = function(list){
-       let data = list.shift();
-       if(data == "null"){
-           return null;
-       }
-       let node = new TreeNode();
-       node.val = data;
-       node.left = preList(list);
-       node.right = preList(list);
-       return node;
+    let preList = function (list) {
+        let data = list.shift();
+        if (data == "null") {
+            return null;
+        }
+        let node = new TreeNode();
+        node.val = data;
+        node.left = preList(list);
+        node.right = preList(list);
+        return node;
     }
     return preList(arr);
-    
+
 };
 
 /**

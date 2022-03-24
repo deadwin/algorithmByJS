@@ -16,23 +16,23 @@
  * }
  */
 
-import { TreeNode } from "../problems/isSameTree";
+import { TreeNode } from "../problems/TreeNode";
 
 function lowestCommonAncestor(root: TreeNode | null, p: number, q: number): TreeNode | null {
     let ansNode = null;
-    function dfs(node:TreeNode | null){
-        if(!node) return false;
+    function dfs(node: TreeNode | null) {
+        if (!node) return false;
         let ansLeft = dfs(node.left);
         let ansRight = dfs(node.right);
-        if(node.val == p || node.val == q){
-            if(ansLeft || ansRight){
+        if (node.val == p || node.val == q) {
+            if (ansLeft || ansRight) {
                 ansNode = node;
                 return false;
-            }else{
+            } else {
                 return true;
             }
-        }else if(!ansNode){
-            if(ansRight && ansLeft){
+        } else if (!ansNode) {
+            if (ansRight && ansLeft) {
                 ansNode = node;
             }
         }

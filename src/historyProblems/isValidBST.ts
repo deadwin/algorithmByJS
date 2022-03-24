@@ -7,17 +7,17 @@
  * }
  */
 
-import { TreeNode } from "../problems/isSameTree";
+import { TreeNode } from "../problems/TreeNode";
 
 /**
  * @param {TreeNode} root
  * @return {boolean}
  */
-var isValidBST = function(root:TreeNode):boolean {
-   let helper = (root:TreeNode,lower:number,upper:number) =>{
-        if(root == null) return true;
-        if(root.val <= lower || root.val >= upper) return false;
-        return helper(root.left,lower,root.val) && helper(root.right,root.val,upper);
+var isValidBST = function (root: TreeNode): boolean {
+   let helper = (root: TreeNode, lower: number, upper: number) => {
+      if (root == null) return true;
+      if (root.val <= lower || root.val >= upper) return false;
+      return helper(root.left, lower, root.val) && helper(root.right, root.val, upper);
    }
-   return helper(root,-Infinity,Infinity);
+   return helper(root, -Infinity, Infinity);
 };

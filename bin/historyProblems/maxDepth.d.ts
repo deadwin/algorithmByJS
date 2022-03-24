@@ -6,7 +6,7 @@
  *     this.left = this.right = null;
  * }
  */
-import { TreeNode } from "../problems/isSameTree";
+import { TreeNode } from "../problems/TreeNode";
 /**
  * @param {TreeNode} root
  * @return {number}

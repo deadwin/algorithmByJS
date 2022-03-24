@@ -12,5 +12,5 @@
  *     }
  * }
  */
-import { TreeNode } from "../problems/isSameTree";
+import { TreeNode } from "../problems/TreeNode";
 export declare function levelOrder(root: TreeNode | null): number[][];

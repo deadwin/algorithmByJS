@@ -15,31 +15,32 @@
  * }
  */
 
-import { TreeNode } from "../problems/isSameTree"
+import { TreeNode } from "../problems/TreeNode";
+
 
 export function pathSum(root: TreeNode | null, sum: number): number[][] {
-    if(root === null) return [];
-    let ansArr= [];
+    if (root === null) return [];
+    let ansArr = [];
 
-    let serach = (node:TreeNode,sum:number,arr:number[]) => {
+    let serach = (node: TreeNode, sum: number, arr: number[]) => {
         let tempArr = [];
-        for(let i = 0;i < arr.length;i ++){
+        for (let i = 0; i < arr.length; i++) {
             tempArr.push(arr[i]);
         }
         sum = sum - node.val;
         tempArr.push(node.val);
-        if(sum == 0 && !node.left && !node.right){
+        if (sum == 0 && !node.left && !node.right) {
             // return arr;
             ansArr.push(tempArr);
         }
-        if(node.left){
-            serach(node.left,sum,tempArr);
+        if (node.left) {
+            serach(node.left, sum, tempArr);
         }
-        if(node.right){
-            serach(node.right,sum,tempArr);
+        if (node.right) {
+            serach(node.right, sum, tempArr);
         }
     }
-    serach(root,sum,[]);
+    serach(root, sum, []);
     return ansArr;
 
 

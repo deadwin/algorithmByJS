@@ -13,26 +13,26 @@
  * }
  */
 
-import { TreeNode } from "../problems/isSameTree";
+import { TreeNode } from "../problems/TreeNode";
 
 export function levelOrder(root: TreeNode | null): number[][] {
-    if(!root) return [];
+    if (!root) return [];
     let ans = [];
     let treeNodeArr = [];
     treeNodeArr.push(root);
     let len = treeNodeArr.length;
     let tempAnsArr = [];
-    while(len > 0 || treeNodeArr.length > 0){
+    while (len > 0 || treeNodeArr.length > 0) {
         let curTreeNode = treeNodeArr.shift() as TreeNode;
-        len --;
+        len--;
         tempAnsArr.push(curTreeNode.val);
-        if(curTreeNode.left){
+        if (curTreeNode.left) {
             treeNodeArr.push(curTreeNode.left);
         }
-        if(curTreeNode.right){
+        if (curTreeNode.right) {
             treeNodeArr.push(curTreeNode.right);
         }
-        if(len == 0){
+        if (len == 0) {
             ans.push(tempAnsArr);
             tempAnsArr = [];
             len = treeNodeArr.length;
