@@ -4,6 +4,9 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function (s) {
+    return sol2(s);
+};
+function sol1(s) {
     if (!s || s.length == 0)
         return 0;
     let arr = new Array(s.length);
@@ -31,5 +34,22 @@ var lengthOfLongestSubstring = function (s) {
         ans = Math.max(arr[i], ans);
     }
     return ans;
-};
+}
 //"aabaab!bb"
+function sol2(s) {
+    let max = 0;
+    let left = 0;
+    /**
+        a b b a
+     */
+    let len = s.length;
+    let map = new Map();
+    for (let i = 0; i < len; i++) {
+        if (map.has(s[i])) {
+            left = Math.max(left, map.get(s[i]) + 1);
+        }
+        map.set(s[i], i);
+        max = Math.max(max, i - left + 1);
+    }
+    return max;
+}

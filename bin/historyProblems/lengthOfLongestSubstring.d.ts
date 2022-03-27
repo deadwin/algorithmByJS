@@ -4,3 +4,5 @@
  * @return {number}
  */
 declare var lengthOfLongestSubstring: (s: string) => number;
+declare function sol1(s: string): any;
+declare function sol2(s: string): number;
