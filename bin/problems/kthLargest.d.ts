@@ -1,18 +1,16 @@
-/**剑指 Offer 54. 二叉搜索树的第 k 大节点
- * 2020年11月28日
- * 有空重做。
- */
+declare class KthLargest {
+    private stack;
+    constructor(k: number, nums: number[]);
+    add(val: number): number;
+}
+declare class MinHeap {
+    private data;
+    private comparator;
+    constructor(data?: any[]);
+    private heapify;
+}
 /**
- * Definition for a binary tree node.
- * class TreeNode {
- *     val: number
- *     left: TreeNode | null
- *     right: TreeNode | null
- *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.left = (left===undefined ? null : left)
- *         this.right = (right===undefined ? null : right)
- *     }
- * }
- */
-export {};
+ * Your KthLargest object will be instantiated and called as such:
+ * var obj = new KthLargest(k, nums)
+ * var param_1 = obj.add(val)
+ */ 

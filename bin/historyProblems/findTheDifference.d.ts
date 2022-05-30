@@ -5,3 +5,5 @@
  * @returns
  */
 declare function findTheDifference(s: string, t: string): string;
+/**解法1,使用哈希 */
+declare function fsol1(s: string, t: string): string;

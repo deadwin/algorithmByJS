@@ -5,10 +5,10 @@
  * @returns 
  */
 function findTheDifference(s: string, t: string): string {
-    return sol1(s, t);
+    return fsol1(s, t);
 };
 /**解法1,使用哈希 */
-function sol1(s: string, t: string) {
+function fsol1(s: string, t: string) {
     let len = s.length;
     let set = {};
     for (let i = 0; i < len; i++) {
